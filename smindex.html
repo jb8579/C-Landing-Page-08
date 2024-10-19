@@ -222,7 +222,17 @@
 
             <div class="page_wrapper">
                 <div class="navbar navbar-inverse navbar-fixed-top">
-                    <son-dl-beam responsible-link="/responsible_gaming.html"></son-dl-beam>
+                    
+                    <!-- ==================== Sticky 18+ Start ===================== -->
+                    <div class="dl-beam">
+                        <div class="container">
+                            <div class="inner-container">
+                                <slot name="age-icon"><img alt="germany_flag" src="images/germany-flag.webp" class="flag-icon"></slot>
+                                <div class="text">Lizenziert in Deutschland</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================== Sticky 18+ End ===================== -->
                     <div class="navbar-header navbar-inner">
                         <a href="#menu-toggle" id="menu-toggle" class="btn btn-navbar btn-lg">
                             <span class="glyphicon glyphicon-align-justify"></span>
