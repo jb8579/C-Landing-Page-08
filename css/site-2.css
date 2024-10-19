@@ -41,6 +41,10 @@ html,body{height:100%;background-color:#000;color:#999}body{position:relative}.g
     padding: 10px;
     overflow-x: hidden;
     margin-top: -50px;
+}.navbar>.navbar-inner .brand img {
+  height: 33px;
+  top: 11px;
+  position: relative;
 }
   }
   
