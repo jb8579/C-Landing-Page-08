@@ -47,4 +47,9 @@ html,body{height:100%;background-color:#000;color:#999}body{position:relative}.g
   position: relative;
 }
   }
+
+  .navbar>.navbar-inner .brand.hidden-xs {
+    padding: 0px 8px !important;
+    margin-left: -77px;
+}
   
