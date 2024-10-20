@@ -5,25 +5,18 @@
         <script>
             // Function to check screen size and redirect
             function checkScreenSize() {
-                const currentPage = window.location.pathname;
-                const mobilePage = "/smindex.html";
-        
-                if (window.innerWidth <= 768 && currentPage !== mobilePage) {
-                    // Redirect to the mobile version (smindex.html) if on a different page
-                    window.location.href = mobilePage;
-                } else if (window.innerWidth > 768 && currentPage === mobilePage) {
-                    // Redirect back to desktop version if resized larger than 768px
-                    window.location.href = desktopPage;
+                if (window.innerWidth <= 768) {
+                    // Redirect to the mobile version (smindex.html)
+                    window.location.href = "smindex.html";
                 }
             }
-        
+    
             // Run check on page load
             window.onload = checkScreenSize;
-        
+    
             // Run check on window resize
             window.onresize = checkScreenSize;
         </script>
-        
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
